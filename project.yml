@@ -1,0 +1,47 @@
+name: Siddur
+options:
+  bundleIdPrefix: com.rowshr
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "26.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+targets:
+  Siddur:
+    type: application
+    platform: iOS
+    sources:
+      - path: Siddur
+    info:
+      path: Siddur/Info.plist
+      properties:
+        CFBundleDisplayName: Siddur
+        CFBundleShortVersionString: "0.1.0"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        NSLocationWhenInUseUsageDescription: Siddur uses your location only to compute local sunrise and sunset so it can suggest the right service for the time of day. Nothing is stored or sent anywhere.
+        ITSAppUsesNonExemptEncryption: false
+        UIAppFonts:
+          - FrankRuhlLibre.ttf
+          - DavidLibre-Regular.ttf
+          - DavidLibre-Medium.ttf
+          - DavidLibre-Bold.ttf
+          - NotoSerifHebrew.ttf
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rowshr.siddur
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_EMIT_LOC_STRINGS: YES

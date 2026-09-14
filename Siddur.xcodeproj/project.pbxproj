@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0229F031AEAF63E4BF7DB5C1 /* OFL-DavidLibre.txt in Resources */ = {isa = PBXBuildFile; fileRef = B33E316600F03754952D9364 /* OFL-DavidLibre.txt */; };
+		02C1ADF93AB2C8B005865EFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A437108E5AD6AC22E93A9E /* HomeView.swift */; };
+		0C1820D8E80B1341DF267EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D95BF4B972AEA56C7662661 /* Assets.xcassets */; };
+		1642E555AD63BBB11DE47943 /* SefariaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB355B984E1D4C4134D38DC /* SefariaClient.swift */; };
+		16A04E84FAA6BD43F5003AAD /* NotoSerifHebrew.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B3104933999F4B8B0C26E60 /* NotoSerifHebrew.ttf */; };
+		198B5F8C6FB168E679C90077 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE577E5E4D8FE9DB65A8FFE /* RootView.swift */; };
+		1B9344ECE7C438CF7CE4513B /* ari.json in Resources */ = {isa = PBXBuildFile; fileRef = 41A0C55C06E3FE8D873F2C38 /* ari.json */; };
+		1FF69B728D05138B5B5C48D7 /* SiddurApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0145084550943EDE904F3B5B /* SiddurApp.swift */; };
+		227020671466BFBD0F165AD2 /* SiddurNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4004D24054E18A8C422320C /* SiddurNode.swift */; };
+		24493640D6283D0CEEFDFDC1 /* edotHaMizrach.json in Resources */ = {isa = PBXBuildFile; fileRef = EC28CAC1D8BD9E2056941B6F /* edotHaMizrach.json */; };
+		26CCA725A5FD3B8003C7FD9D /* HebrewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E571248B6A26275086E7AA /* HebrewText.swift */; };
+		2D148A505835993802A4678A /* DavidLibre-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBCA1E0638AC40E33E98300C /* DavidLibre-Medium.ttf */; };
+		2D65C262EB70E64EFDA66D2E /* UserLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566092D9EB5DF30524FD3022 /* UserLibrary.swift */; };
+		3C719AC4A38A05D6CF4C1D87 /* LanguageModePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B0CA4166827593FE79DB86 /* LanguageModePicker.swift */; };
+		3DA3DAF3DB24618BDEE83078 /* SurfaceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B63DEFE7B6931C8624F9DB /* SurfaceCard.swift */; };
+		46746C0DBA2F2AEB736F7288 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C13B550C506B982D90523A /* SettingsView.swift */; };
+		4FD991A046D8129C76B3B2A0 /* ServiceSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982478A373B89F5CD09732FD /* ServiceSlot.swift */; };
+		53F46011E1FA6B204CE32E23 /* JewishClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643D3788772BE6B638E1F75D /* JewishClock.swift */; };
+		594FA15E9800CBEB06F559FB /* ParagraphRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3DFF3447B04DF726397B1 /* ParagraphRow.swift */; };
+		5A4EF99073A970AB0887AEF3 /* StyledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41FAF1E7DB8CA3E7880E97 /* StyledText.swift */; };
+		6AAEDB181E1EBC3C0600E5FA /* DavidLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F63333E1D5FEF25DDCBA33C /* DavidLibre-Regular.ttf */; };
+		7195F26A61B26ABA0A065BA4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C1EBD13087D560F2DEF02 /* LocationService.swift */; };
+		7BA9A627F95B70B24D5DC6D1 /* OFL-NotoSerifHebrew.txt in Resources */ = {isa = PBXBuildFile; fileRef = 900C229AE222535A1E9CEFBC /* OFL-NotoSerifHebrew.txt */; };
+		8317EDBC02A13C6DAC87D2AF /* FrankRuhlLibre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783C09CC495111853C662C3 /* FrankRuhlLibre.ttf */; };
+		900DAA34AB8C4E51BCF44125 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6949055DB349EA072B9C3 /* Route.swift */; };
+		A338725524905434C84E8A02 /* sefard.json in Resources */ = {isa = PBXBuildFile; fileRef = 18211EE8ACF96563E86C30D7 /* sefard.json */; };
+		A44FCB9074807D652471E165 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF341D678B5CC1F40FF66052 /* ReaderView.swift */; };
+		A5282DEB76A81A20411A7032 /* SiddurLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489DFDE1AA2E7E7550FB6930 /* SiddurLibrary.swift */; };
+		A697333AA04E3470E9C9B7D2 /* SnapshotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCAA4435D2117FCA6887C6B /* SnapshotDriver.swift */; };
+		A7287E3897C16402507E1E04 /* Nusach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83148472780DA38737C89DC9 /* Nusach.swift */; };
+		B7074F9061ED168B59C48170 /* DavidLibre-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54AB2B59C4356F762FB5477D /* DavidLibre-Bold.ttf */; };
+		C3C7E753AC315B4A8B55B759 /* FontCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229825A1438F27DF7AB53123 /* FontCatalog.swift */; };
+		CD38CF0E6EA9A38615838F05 /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7C7D26EF6B119CA2188A8 /* Backdrop.swift */; };
+		CF604362656A18E35FEA0EF2 /* HTMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116653251607A6DC888B35B /* HTMLText.swift */; };
+		D5CD932DE7943658CC352B77 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25EC6E192AB51B09DF1B82 /* Brand.swift */; };
+		DBE3F19C63FEA1350CD7FB43 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B28236203D587A804EA8A /* LibraryView.swift */; };
+		DC91633F62AFD9F9E8232009 /* TypographySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE8CB703BBD884016D0C95 /* TypographySheet.swift */; };
+		E12B54E88B2DC2BB416D869E /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F1237C29554511C58D0128 /* Platform.swift */; };
+		E6240D15CE67F2502D6E3D34 /* TextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14851FEC143A13B5DABDD41 /* TextRepository.swift */; };
+		EB945F7AE5244FE91A392178 /* ReadingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BEC1624AAB49D23B8EE78F /* ReadingSettings.swift */; };
+		EF8BEFAB9B1FAF72ABB28DBF /* ashkenaz.json in Resources */ = {isa = PBXBuildFile; fileRef = 69CFF74C49B8ECAA21A630D2 /* ashkenaz.json */; };
+		F49C56D5A8376F41395A78FE /* SectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD2A026477C8CC4F0984A1 /* SectionListView.swift */; };
+		F569A8D55795C47A5D4B671B /* PrayerBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D13643321640176DFCCF8 /* PrayerBlockView.swift */; };
+		F8DC29D1FDDB562FAF16BAEB /* OFL-FrankRuhlLibre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 702F0257D60A31E0A6F2BB4C /* OFL-FrankRuhlLibre.txt */; };
+		FFAADA07333249449243D588 /* PrayerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C1F4E49BBB4B5E118B9 /* PrayerText.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0145084550943EDE904F3B5B /* SiddurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiddurApp.swift; sourceTree = "<group>"; };
+		0D95BF4B972AEA56C7662661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1783C09CC495111853C662C3 /* FrankRuhlLibre.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrankRuhlLibre.ttf; sourceTree = "<group>"; };
+		18211EE8ACF96563E86C30D7 /* sefard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sefard.json; sourceTree = "<group>"; };
+		1C5B28236203D587A804EA8A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		229825A1438F27DF7AB53123 /* FontCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCatalog.swift; sourceTree = "<group>"; };
+		22A6949055DB349EA072B9C3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		26BEC1624AAB49D23B8EE78F /* ReadingSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingSettings.swift; sourceTree = "<group>"; };
+		28F1237C29554511C58D0128 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		2B3104933999F4B8B0C26E60 /* NotoSerifHebrew.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotoSerifHebrew.ttf; sourceTree = "<group>"; };
+		2F63333E1D5FEF25DDCBA33C /* DavidLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Regular.ttf"; sourceTree = "<group>"; };
+		30FE8CB703BBD884016D0C95 /* TypographySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographySheet.swift; sourceTree = "<group>"; };
+		3CB699E25645AD01E238B626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3DCAA4435D2117FCA6887C6B /* SnapshotDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotDriver.swift; sourceTree = "<group>"; };
+		3EE577E5E4D8FE9DB65A8FFE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		41A0C55C06E3FE8D873F2C38 /* ari.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ari.json; sourceTree = "<group>"; };
+		41D94C1F4E49BBB4B5E118B9 /* PrayerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerText.swift; sourceTree = "<group>"; };
+		489DFDE1AA2E7E7550FB6930 /* SiddurLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiddurLibrary.swift; sourceTree = "<group>"; };
+		54AB2B59C4356F762FB5477D /* DavidLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Bold.ttf"; sourceTree = "<group>"; };
+		55A437108E5AD6AC22E93A9E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		566092D9EB5DF30524FD3022 /* UserLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLibrary.swift; sourceTree = "<group>"; };
+		643D3788772BE6B638E1F75D /* JewishClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewishClock.swift; sourceTree = "<group>"; };
+		69CFF74C49B8ECAA21A630D2 /* ashkenaz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashkenaz.json; sourceTree = "<group>"; };
+		6FB355B984E1D4C4134D38DC /* SefariaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SefariaClient.swift; sourceTree = "<group>"; };
+		702F0257D60A31E0A6F2BB4C /* OFL-FrankRuhlLibre.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-FrankRuhlLibre.txt"; sourceTree = "<group>"; };
+		751C1EBD13087D560F2DEF02 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		79F7C7D26EF6B119CA2188A8 /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
+		83148472780DA38737C89DC9 /* Nusach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nusach.swift; sourceTree = "<group>"; };
+		88B63DEFE7B6931C8624F9DB /* SurfaceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceCard.swift; sourceTree = "<group>"; };
+		900C229AE222535A1E9CEFBC /* OFL-NotoSerifHebrew.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-NotoSerifHebrew.txt"; sourceTree = "<group>"; };
+		939D13643321640176DFCCF8 /* PrayerBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerBlockView.swift; sourceTree = "<group>"; };
+		97C13B550C506B982D90523A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		982478A373B89F5CD09732FD /* ServiceSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSlot.swift; sourceTree = "<group>"; };
+		9CD63CB1C70E91E92191BFFE /* Siddur.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Siddur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FBD2A026477C8CC4F0984A1 /* SectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListView.swift; sourceTree = "<group>"; };
+		A9B3DFF3447B04DF726397B1 /* ParagraphRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphRow.swift; sourceTree = "<group>"; };
+		AA25EC6E192AB51B09DF1B82 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		AF41FAF1E7DB8CA3E7880E97 /* StyledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledText.swift; sourceTree = "<group>"; };
+		B33E316600F03754952D9364 /* OFL-DavidLibre.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-DavidLibre.txt"; sourceTree = "<group>"; };
+		BBCA1E0638AC40E33E98300C /* DavidLibre-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Medium.ttf"; sourceTree = "<group>"; };
+		C4E571248B6A26275086E7AA /* HebrewText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HebrewText.swift; sourceTree = "<group>"; };
+		D4004D24054E18A8C422320C /* SiddurNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiddurNode.swift; sourceTree = "<group>"; };
+		E116653251607A6DC888B35B /* HTMLText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLText.swift; sourceTree = "<group>"; };
+		E1B0CA4166827593FE79DB86 /* LanguageModePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModePicker.swift; sourceTree = "<group>"; };
+		EC28CAC1D8BD9E2056941B6F /* edotHaMizrach.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = edotHaMizrach.json; sourceTree = "<group>"; };
+		F14851FEC143A13B5DABDD41 /* TextRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRepository.swift; sourceTree = "<group>"; };
+		FF341D678B5CC1F40FF66052 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1FB332FF30D2CE53ACF3D5FA /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3DFF3447B04DF726397B1 /* ParagraphRow.swift */,
+				939D13643321640176DFCCF8 /* PrayerBlockView.swift */,
+				FF341D678B5CC1F40FF66052 /* ReaderView.swift */,
+				AF41FAF1E7DB8CA3E7880E97 /* StyledText.swift */,
+				30FE8CB703BBD884016D0C95 /* TypographySheet.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		306CEDCFD79638C47D0B1172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD63CB1C70E91E92191BFFE /* Siddur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		317252F298C3882AE904ABD6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				229825A1438F27DF7AB53123 /* FontCatalog.swift */,
+				26BEC1624AAB49D23B8EE78F /* ReadingSettings.swift */,
+				566092D9EB5DF30524FD3022 /* UserLibrary.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		337305214BD47CF2CE28F2F4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				54AB2B59C4356F762FB5477D /* DavidLibre-Bold.ttf */,
+				BBCA1E0638AC40E33E98300C /* DavidLibre-Medium.ttf */,
+				2F63333E1D5FEF25DDCBA33C /* DavidLibre-Regular.ttf */,
+				1783C09CC495111853C662C3 /* FrankRuhlLibre.ttf */,
+				2B3104933999F4B8B0C26E60 /* NotoSerifHebrew.ttf */,
+				B33E316600F03754952D9364 /* OFL-DavidLibre.txt */,
+				702F0257D60A31E0A6F2BB4C /* OFL-FrankRuhlLibre.txt */,
+				900C229AE222535A1E9CEFBC /* OFL-NotoSerifHebrew.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4CB8CDC37E5CDD4B2D9131FE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				97C13B550C506B982D90523A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		57B54A424250DFF1A6EACF8C /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAA4435D2117FCA6887C6B /* SnapshotDriver.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		5F3363F07BB17800BEB3EBF5 = {
+			isa = PBXGroup;
+			children = (
+				C9D3D4569340A20D3C8E63F0 /* Siddur */,
+				306CEDCFD79638C47D0B1172 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FEB93C1F965C1E3BF23ADB3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3EE577E5E4D8FE9DB65A8FFE /* RootView.swift */,
+				0145084550943EDE904F3B5B /* SiddurApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6C829FD01E228FD6DB0760B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				337305214BD47CF2CE28F2F4 /* Fonts */,
+				9987CB5DBBF5727E44E9067A /* Indices */,
+				0D95BF4B972AEA56C7662661 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		763F1A6A507D45F96D1CD1FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83148472780DA38737C89DC9 /* Nusach.swift */,
+				41D94C1F4E49BBB4B5E118B9 /* PrayerText.swift */,
+				982478A373B89F5CD09732FD /* ServiceSlot.swift */,
+				D4004D24054E18A8C422320C /* SiddurNode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D60E1150C185E65B6B89821 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				79F7C7D26EF6B119CA2188A8 /* Backdrop.swift */,
+				AA25EC6E192AB51B09DF1B82 /* Brand.swift */,
+				E1B0CA4166827593FE79DB86 /* LanguageModePicker.swift */,
+				28F1237C29554511C58D0128 /* Platform.swift */,
+				22A6949055DB349EA072B9C3 /* Route.swift */,
+				88B63DEFE7B6931C8624F9DB /* SurfaceCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8960C1A3285786D70CFDD22F /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				C4E571248B6A26275086E7AA /* HebrewText.swift */,
+				E116653251607A6DC888B35B /* HTMLText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		9987CB5DBBF5727E44E9067A /* Indices */ = {
+			isa = PBXGroup;
+			children = (
+				41A0C55C06E3FE8D873F2C38 /* ari.json */,
+				69CFF74C49B8ECAA21A630D2 /* ashkenaz.json */,
+				EC28CAC1D8BD9E2056941B6F /* edotHaMizrach.json */,
+				18211EE8ACF96563E86C30D7 /* sefard.json */,
+			);
+			path = Indices;
+			sourceTree = "<group>";
+		};
+		AF4446ED626D022D0CB1C586 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				643D3788772BE6B638E1F75D /* JewishClock.swift */,
+				751C1EBD13087D560F2DEF02 /* LocationService.swift */,
+				6FB355B984E1D4C4134D38DC /* SefariaClient.swift */,
+				489DFDE1AA2E7E7550FB6930 /* SiddurLibrary.swift */,
+				F14851FEC143A13B5DABDD41 /* TextRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C9D3D4569340A20D3C8E63F0 /* Siddur */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB93C1F965C1E3BF23ADB3 /* App */,
+				57B54A424250DFF1A6EACF8C /* Debug */,
+				763F1A6A507D45F96D1CD1FF /* Models */,
+				6C829FD01E228FD6DB0760B1 /* Resources */,
+				AF4446ED626D022D0CB1C586 /* Services */,
+				317252F298C3882AE904ABD6 /* Settings */,
+				8960C1A3285786D70CFDD22F /* Text */,
+				EBEA893DE7781673D98E0398 /* Views */,
+				3CB699E25645AD01E238B626 /* Info.plist */,
+			);
+			path = Siddur;
+			sourceTree = "<group>";
+		};
+		D2A2BA93A628048CEE9BF3FC /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				1C5B28236203D587A804EA8A /* LibraryView.swift */,
+				9FBD2A026477C8CC4F0984A1 /* SectionListView.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		E9660CA753FB86B7C14C2967 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55A437108E5AD6AC22E93A9E /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EBEA893DE7781673D98E0398 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2A2BA93A628048CEE9BF3FC /* Browse */,
+				7D60E1150C185E65B6B89821 /* Components */,
+				E9660CA753FB86B7C14C2967 /* Home */,
+				1FB332FF30D2CE53ACF3D5FA /* Reader */,
+				4CB8CDC37E5CDD4B2D9131FE /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E510FD4B0408F882D17036 /* Siddur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2996A68E8EC58D3DF3FCDC82 /* Build configuration list for PBXNativeTarget "Siddur" */;
+			buildPhases = (
+				72AD5F58D3B7EE2D285E368E /* Sources */,
+				FC145A8B9318A01F81E1255D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siddur;
+			packageProductDependencies = (
+			);
+			productName = Siddur;
+			productReference = 9CD63CB1C70E91E92191BFFE /* Siddur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C01606710AB1BDAFD6843DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A5E510FD4B0408F882D17036 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1CCFC6F4DB56800240857DC2 /* Build configuration list for PBXProject "Siddur" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5F3363F07BB17800BEB3EBF5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 306CEDCFD79638C47D0B1172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E510FD4B0408F882D17036 /* Siddur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC145A8B9318A01F81E1255D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1820D8E80B1341DF267EBD /* Assets.xcassets in Resources */,
+				B7074F9061ED168B59C48170 /* DavidLibre-Bold.ttf in Resources */,
+				2D148A505835993802A4678A /* DavidLibre-Medium.ttf in Resources */,
+				6AAEDB181E1EBC3C0600E5FA /* DavidLibre-Regular.ttf in Resources */,
+				8317EDBC02A13C6DAC87D2AF /* FrankRuhlLibre.ttf in Resources */,
+				16A04E84FAA6BD43F5003AAD /* NotoSerifHebrew.ttf in Resources */,
+				0229F031AEAF63E4BF7DB5C1 /* OFL-DavidLibre.txt in Resources */,
+				F8DC29D1FDDB562FAF16BAEB /* OFL-FrankRuhlLibre.txt in Resources */,
+				7BA9A627F95B70B24D5DC6D1 /* OFL-NotoSerifHebrew.txt in Resources */,
+				1B9344ECE7C438CF7CE4513B /* ari.json in Resources */,
+				EF8BEFAB9B1FAF72ABB28DBF /* ashkenaz.json in Resources */,
+				24493640D6283D0CEEFDFDC1 /* edotHaMizrach.json in Resources */,
+				A338725524905434C84E8A02 /* sefard.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72AD5F58D3B7EE2D285E368E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD38CF0E6EA9A38615838F05 /* Backdrop.swift in Sources */,
+				D5CD932DE7943658CC352B77 /* Brand.swift in Sources */,
+				C3C7E753AC315B4A8B55B759 /* FontCatalog.swift in Sources */,
+				CF604362656A18E35FEA0EF2 /* HTMLText.swift in Sources */,
+				26CCA725A5FD3B8003C7FD9D /* HebrewText.swift in Sources */,
+				02C1ADF93AB2C8B005865EFB /* HomeView.swift in Sources */,
+				53F46011E1FA6B204CE32E23 /* JewishClock.swift in Sources */,
+				3C719AC4A38A05D6CF4C1D87 /* LanguageModePicker.swift in Sources */,
+				DBE3F19C63FEA1350CD7FB43 /* LibraryView.swift in Sources */,
+				7195F26A61B26ABA0A065BA4 /* LocationService.swift in Sources */,
+				A7287E3897C16402507E1E04 /* Nusach.swift in Sources */,
+				594FA15E9800CBEB06F559FB /* ParagraphRow.swift in Sources */,
+				E12B54E88B2DC2BB416D869E /* Platform.swift in Sources */,
+				F569A8D55795C47A5D4B671B /* PrayerBlockView.swift in Sources */,
+				FFAADA07333249449243D588 /* PrayerText.swift in Sources */,
+				A44FCB9074807D652471E165 /* ReaderView.swift in Sources */,
+				EB945F7AE5244FE91A392178 /* ReadingSettings.swift in Sources */,
+				198B5F8C6FB168E679C90077 /* RootView.swift in Sources */,
+				900DAA34AB8C4E51BCF44125 /* Route.swift in Sources */,
+				F49C56D5A8376F41395A78FE /* SectionListView.swift in Sources */,
+				1642E555AD63BBB11DE47943 /* SefariaClient.swift in Sources */,
+				4FD991A046D8129C76B3B2A0 /* ServiceSlot.swift in Sources */,
+				46746C0DBA2F2AEB736F7288 /* SettingsView.swift in Sources */,
+				1FF69B728D05138B5B5C48D7 /* SiddurApp.swift in Sources */,
+				A5282DEB76A81A20411A7032 /* SiddurLibrary.swift in Sources */,
+				227020671466BFBD0F165AD2 /* SiddurNode.swift in Sources */,
+				A697333AA04E3470E9C9B7D2 /* SnapshotDriver.swift in Sources */,
+				5A4EF99073A970AB0887AEF3 /* StyledText.swift in Sources */,
+				3DA3DAF3DB24618BDEE83078 /* SurfaceCard.swift in Sources */,
+				E6240D15CE67F2502D6E3D34 /* TextRepository.swift in Sources */,
+				DC91633F62AFD9F9E8232009 /* TypographySheet.swift in Sources */,
+				2D65C262EB70E64EFDA66D2E /* UserLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2766C521AD035A694057558B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		8A2457F7E1CF0564808C26D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AC495497D0C4F5E7676200FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Siddur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowshr.siddur;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D021419EED1C7807F892C645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Siddur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rowshr.siddur;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CCFC6F4DB56800240857DC2 /* Build configuration list for PBXProject "Siddur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2766C521AD035A694057558B /* Debug */,
+				8A2457F7E1CF0564808C26D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2996A68E8EC58D3DF3FCDC82 /* Build configuration list for PBXNativeTarget "Siddur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D021419EED1C7807F892C645 /* Debug */,
+				AC495497D0C4F5E7676200FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C01606710AB1BDAFD6843DB /* Project object */;
+}

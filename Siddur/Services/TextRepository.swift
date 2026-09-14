@@ -1,8 +1,8 @@
 import Foundation
 import CryptoKit
 
-/// Memory + disk cache in front of `SefariaClient`. Liturgical text never changes,
-/// so cached entries are kept indefinitely and make the app fully usable offline.
+/// Serves prayer text: bundled first (see `BundledTexts`), then the on-device
+/// cache, then Sefaria. Liturgical text never changes, so nothing expires.
 actor TextRepository {
     static let shared = TextRepository()
 
@@ -21,6 +21,10 @@ actor TextRepository {
 
     func text(for ref: String) async throws -> PrayerLeafText {
         if let hit = memory[ref] { return hit }
+        if let bundled = BundledTexts.leaf(for: ref) {
+            memory[ref] = bundled
+            return bundled
+        }
         if let disk = readFromDisk(ref) {
             memory[ref] = disk
             return disk
@@ -40,12 +44,12 @@ actor TextRepository {
     }
 
     func isCached(_ ref: String) -> Bool {
-        memory[ref] != nil || FileManager.default.fileExists(atPath: fileURL(for: ref).path)
+        memory[ref] != nil || BundledTexts.contains(ref) || FileManager.default.fileExists(atPath: fileURL(for: ref).path)
     }
 
     /// Fetches every ref, ignoring individual failures. Reports progress 0...1.
     func prefetch(refs: [String], progress: @Sendable @escaping (Double) -> Void) async {
-        let unique = Array(Set(refs))
+        let unique = Array(Set(refs)).filter { !BundledTexts.contains($0) }
         guard !unique.isEmpty else { progress(1); return }
         var done = 0
         await withTaskGroup(of: Void.self) { group in

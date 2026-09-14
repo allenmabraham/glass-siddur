@@ -10,7 +10,7 @@ A native iOS 26 siddur with Liquid Glass UI. Hebrew on the right, English on the
 - **Typography**: pinch to zoom or use the slider; Hebrew faces Frank Ruhl (default), David, Noto Serif, SF Hebrew, Arial Hebrew, Times; English faces New York (default), San Francisco, Charter, Georgia, Palatino, Iowan, Baskerville, Hoefler, Avenir, Times. Line spacing, side-by-side or stacked bilingual layout, vowels and cantillation toggles, light/sepia/dark.
 - **Traditional page**: bold opening words, small gray rubrics for instructions, Hebrew headings between hairlines with spaced small-cap English beneath, as in a printed Orthodox siddur.
 - **Today**: Hebrew date, Shabbat / Rosh Chodesh awareness, and the service for the current time (optional location for real sunrise and sunset).
-- **Offline**: every opened prayer is cached; download a whole siddur from Settings.
+- **Fully offline from install**: every prayer of every nusach (844 prayers, about 10 MB of JSON) ships inside the app. No download, no connection needed, ever. Sefaria is only contacted if a ref is somehow missing from the bundle.
 - Bookmarks, continue reading, search by English or Hebrew title.
 
 ## Screenshots
@@ -86,6 +86,15 @@ Siddur/
 
 ## Data
 
-Tables of contents are compacted from Sefaria's index API and bundled (`Resources/Indices`). Prayer text is fetched on demand from `https://www.sefaria.org/api/v3/texts/{ref}?version=hebrew&version=english` and cached under Caches/SefariaTexts.
+Tables of contents are compacted from Sefaria's index API and bundled (`Resources/Indices`). Prayer text is bundled too (`Resources/Texts/<nusach>-texts.json`), produced by:
+
+```sh
+node Tools/fetch-texts.js            # all four nusachim
+node Tools/fetch-texts.js ashkenaz   # one of them
+```
+
+The script pulls `https://www.sefaria.org/api/v3/texts/{ref}?version=hebrew&version=english` for every leaf and writes the same shape the app decodes. Re-run it to pick up corrections from Sefaria. At runtime `BundledTexts` serves the bundle first; `TextRepository` falls back to a disk cache and then to the API only for refs the bundle lacks. Launching a Debug build with `SIDDUR_OFFLINE=1` simulates no connectivity.
+
+Coverage note: Sefaria's English is incomplete. Of the 844 prayers, 435 have Hebrew only (195 in Ashkenaz, 118 in Sefard, 81 in Edot HaMizrach, all 47 in Ari); those read as Hebrew regardless of the language setting.
 
 Hebrew: The Metsudah Siddur (1981). English: translation based on the Metsudah linear siddur by Avrohom Davis. Chabad text: Wikisource (Hebrew only). Fonts: Frank Ruhl Libre, David Libre, Noto Serif Hebrew under the SIL Open Font License (see `Resources/Fonts/OFL-*.txt`).

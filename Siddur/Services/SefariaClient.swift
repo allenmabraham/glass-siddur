@@ -28,6 +28,12 @@ actor SefariaClient {
     }
 
     func fetch(ref: String) async throws -> PrayerLeafText {
+        #if DEBUG
+        // SIDDUR_OFFLINE=1 simulates no connectivity so the bundled-text path can be tested.
+        if ProcessInfo.processInfo.environment["SIDDUR_OFFLINE"] != nil {
+            throw URLError(.notConnectedToInternet)
+        }
+        #endif
         var components = URLComponents()
         components.scheme = "https"
         components.host = "www.sefaria.org"

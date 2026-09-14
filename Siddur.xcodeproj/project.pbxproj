@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0229F031AEAF63E4BF7DB5C1 /* OFL-DavidLibre.txt in Resources */ = {isa = PBXBuildFile; fileRef = B33E316600F03754952D9364 /* OFL-DavidLibre.txt */; };
 		02C1ADF93AB2C8B005865EFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A437108E5AD6AC22E93A9E /* HomeView.swift */; };
+		03409914EDA7BA4B7DC8381E /* ari-texts.json in Resources */ = {isa = PBXBuildFile; fileRef = 6CDAB83C24BCC3A11C5D8045 /* ari-texts.json */; };
 		0C1820D8E80B1341DF267EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D95BF4B972AEA56C7662661 /* Assets.xcassets */; };
+		0DFD2481E94EFFDE94A86E44 /* edotHaMizrach-texts.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DB0BB3A55E5F06A0290CE07 /* edotHaMizrach-texts.json */; };
 		1642E555AD63BBB11DE47943 /* SefariaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB355B984E1D4C4134D38DC /* SefariaClient.swift */; };
 		16A04E84FAA6BD43F5003AAD /* NotoSerifHebrew.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B3104933999F4B8B0C26E60 /* NotoSerifHebrew.ttf */; };
 		198B5F8C6FB168E679C90077 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE577E5E4D8FE9DB65A8FFE /* RootView.swift */; };
@@ -30,6 +32,7 @@
 		6AAEDB181E1EBC3C0600E5FA /* DavidLibre-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F63333E1D5FEF25DDCBA33C /* DavidLibre-Regular.ttf */; };
 		7195F26A61B26ABA0A065BA4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C1EBD13087D560F2DEF02 /* LocationService.swift */; };
 		7BA9A627F95B70B24D5DC6D1 /* OFL-NotoSerifHebrew.txt in Resources */ = {isa = PBXBuildFile; fileRef = 900C229AE222535A1E9CEFBC /* OFL-NotoSerifHebrew.txt */; };
+		7E0F647DF017FF351D8525BE /* ashkenaz-texts.json in Resources */ = {isa = PBXBuildFile; fileRef = AD2B18E00C64EDD0B7F974BE /* ashkenaz-texts.json */; };
 		8317EDBC02A13C6DAC87D2AF /* FrankRuhlLibre.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1783C09CC495111853C662C3 /* FrankRuhlLibre.ttf */; };
 		900DAA34AB8C4E51BCF44125 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6949055DB349EA072B9C3 /* Route.swift */; };
 		A338725524905434C84E8A02 /* sefard.json in Resources */ = {isa = PBXBuildFile; fileRef = 18211EE8ACF96563E86C30D7 /* sefard.json */; };
@@ -41,6 +44,7 @@
 		C3C7E753AC315B4A8B55B759 /* FontCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229825A1438F27DF7AB53123 /* FontCatalog.swift */; };
 		CD38CF0E6EA9A38615838F05 /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7C7D26EF6B119CA2188A8 /* Backdrop.swift */; };
 		CF604362656A18E35FEA0EF2 /* HTMLText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E116653251607A6DC888B35B /* HTMLText.swift */; };
+		D2125FA32FC7B19A7916EEFB /* BundledTexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A0F8B81C24D8F50CF2D66 /* BundledTexts.swift */; };
 		D5CD932DE7943658CC352B77 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25EC6E192AB51B09DF1B82 /* Brand.swift */; };
 		DBE3F19C63FEA1350CD7FB43 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B28236203D587A804EA8A /* LibraryView.swift */; };
 		DC91633F62AFD9F9E8232009 /* TypographySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FE8CB703BBD884016D0C95 /* TypographySheet.swift */; };
@@ -48,6 +52,7 @@
 		E6240D15CE67F2502D6E3D34 /* TextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14851FEC143A13B5DABDD41 /* TextRepository.swift */; };
 		EB945F7AE5244FE91A392178 /* ReadingSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BEC1624AAB49D23B8EE78F /* ReadingSettings.swift */; };
 		EF8BEFAB9B1FAF72ABB28DBF /* ashkenaz.json in Resources */ = {isa = PBXBuildFile; fileRef = 69CFF74C49B8ECAA21A630D2 /* ashkenaz.json */; };
+		F3665E82B3ED609863D6BD64 /* sefard-texts.json in Resources */ = {isa = PBXBuildFile; fileRef = 477C7D65539C9685D2FAE9AE /* sefard-texts.json */; };
 		F49C56D5A8376F41395A78FE /* SectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD2A026477C8CC4F0984A1 /* SectionListView.swift */; };
 		F569A8D55795C47A5D4B671B /* PrayerBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939D13643321640176DFCCF8 /* PrayerBlockView.swift */; };
 		F8DC29D1FDDB562FAF16BAEB /* OFL-FrankRuhlLibre.txt in Resources */ = {isa = PBXBuildFile; fileRef = 702F0257D60A31E0A6F2BB4C /* OFL-FrankRuhlLibre.txt */; };
@@ -57,6 +62,7 @@
 /* Begin PBXFileReference section */
 		0145084550943EDE904F3B5B /* SiddurApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiddurApp.swift; sourceTree = "<group>"; };
 		0D95BF4B972AEA56C7662661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DB0BB3A55E5F06A0290CE07 /* edotHaMizrach-texts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "edotHaMizrach-texts.json"; sourceTree = "<group>"; };
 		1783C09CC495111853C662C3 /* FrankRuhlLibre.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrankRuhlLibre.ttf; sourceTree = "<group>"; };
 		18211EE8ACF96563E86C30D7 /* sefard.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sefard.json; sourceTree = "<group>"; };
 		1C5B28236203D587A804EA8A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
@@ -65,6 +71,7 @@
 		26BEC1624AAB49D23B8EE78F /* ReadingSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingSettings.swift; sourceTree = "<group>"; };
 		28F1237C29554511C58D0128 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		2B3104933999F4B8B0C26E60 /* NotoSerifHebrew.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotoSerifHebrew.ttf; sourceTree = "<group>"; };
+		2D7A0F8B81C24D8F50CF2D66 /* BundledTexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledTexts.swift; sourceTree = "<group>"; };
 		2F63333E1D5FEF25DDCBA33C /* DavidLibre-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Regular.ttf"; sourceTree = "<group>"; };
 		30FE8CB703BBD884016D0C95 /* TypographySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypographySheet.swift; sourceTree = "<group>"; };
 		3CB699E25645AD01E238B626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -72,12 +79,14 @@
 		3EE577E5E4D8FE9DB65A8FFE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		41A0C55C06E3FE8D873F2C38 /* ari.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ari.json; sourceTree = "<group>"; };
 		41D94C1F4E49BBB4B5E118B9 /* PrayerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerText.swift; sourceTree = "<group>"; };
+		477C7D65539C9685D2FAE9AE /* sefard-texts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sefard-texts.json"; sourceTree = "<group>"; };
 		489DFDE1AA2E7E7550FB6930 /* SiddurLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiddurLibrary.swift; sourceTree = "<group>"; };
 		54AB2B59C4356F762FB5477D /* DavidLibre-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Bold.ttf"; sourceTree = "<group>"; };
 		55A437108E5AD6AC22E93A9E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		566092D9EB5DF30524FD3022 /* UserLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLibrary.swift; sourceTree = "<group>"; };
 		643D3788772BE6B638E1F75D /* JewishClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JewishClock.swift; sourceTree = "<group>"; };
 		69CFF74C49B8ECAA21A630D2 /* ashkenaz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ashkenaz.json; sourceTree = "<group>"; };
+		6CDAB83C24BCC3A11C5D8045 /* ari-texts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ari-texts.json"; sourceTree = "<group>"; };
 		6FB355B984E1D4C4134D38DC /* SefariaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SefariaClient.swift; sourceTree = "<group>"; };
 		702F0257D60A31E0A6F2BB4C /* OFL-FrankRuhlLibre.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-FrankRuhlLibre.txt"; sourceTree = "<group>"; };
 		751C1EBD13087D560F2DEF02 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -92,6 +101,7 @@
 		9FBD2A026477C8CC4F0984A1 /* SectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListView.swift; sourceTree = "<group>"; };
 		A9B3DFF3447B04DF726397B1 /* ParagraphRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphRow.swift; sourceTree = "<group>"; };
 		AA25EC6E192AB51B09DF1B82 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		AD2B18E00C64EDD0B7F974BE /* ashkenaz-texts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ashkenaz-texts.json"; sourceTree = "<group>"; };
 		AF41FAF1E7DB8CA3E7880E97 /* StyledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledText.swift; sourceTree = "<group>"; };
 		B33E316600F03754952D9364 /* OFL-DavidLibre.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-DavidLibre.txt"; sourceTree = "<group>"; };
 		BBCA1E0638AC40E33E98300C /* DavidLibre-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DavidLibre-Medium.ttf"; sourceTree = "<group>"; };
@@ -115,6 +125,17 @@
 				30FE8CB703BBD884016D0C95 /* TypographySheet.swift */,
 			);
 			path = Reader;
+			sourceTree = "<group>";
+		};
+		27EE98A6C6DB8252B0486D03 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				6CDAB83C24BCC3A11C5D8045 /* ari-texts.json */,
+				AD2B18E00C64EDD0B7F974BE /* ashkenaz-texts.json */,
+				0DB0BB3A55E5F06A0290CE07 /* edotHaMizrach-texts.json */,
+				477C7D65539C9685D2FAE9AE /* sefard-texts.json */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 		306CEDCFD79638C47D0B1172 /* Products */ = {
@@ -188,6 +209,7 @@
 			children = (
 				337305214BD47CF2CE28F2F4 /* Fonts */,
 				9987CB5DBBF5727E44E9067A /* Indices */,
+				27EE98A6C6DB8252B0486D03 /* Texts */,
 				0D95BF4B972AEA56C7662661 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -240,6 +262,7 @@
 		AF4446ED626D022D0CB1C586 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2D7A0F8B81C24D8F50CF2D66 /* BundledTexts.swift */,
 				643D3788772BE6B638E1F75D /* JewishClock.swift */,
 				751C1EBD13087D560F2DEF02 /* LocationService.swift */,
 				6FB355B984E1D4C4134D38DC /* SefariaClient.swift */,
@@ -362,9 +385,13 @@
 				0229F031AEAF63E4BF7DB5C1 /* OFL-DavidLibre.txt in Resources */,
 				F8DC29D1FDDB562FAF16BAEB /* OFL-FrankRuhlLibre.txt in Resources */,
 				7BA9A627F95B70B24D5DC6D1 /* OFL-NotoSerifHebrew.txt in Resources */,
+				03409914EDA7BA4B7DC8381E /* ari-texts.json in Resources */,
 				1B9344ECE7C438CF7CE4513B /* ari.json in Resources */,
+				7E0F647DF017FF351D8525BE /* ashkenaz-texts.json in Resources */,
 				EF8BEFAB9B1FAF72ABB28DBF /* ashkenaz.json in Resources */,
+				0DFD2481E94EFFDE94A86E44 /* edotHaMizrach-texts.json in Resources */,
 				24493640D6283D0CEEFDFDC1 /* edotHaMizrach.json in Resources */,
+				F3665E82B3ED609863D6BD64 /* sefard-texts.json in Resources */,
 				A338725524905434C84E8A02 /* sefard.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +405,7 @@
 			files = (
 				CD38CF0E6EA9A38615838F05 /* Backdrop.swift in Sources */,
 				D5CD932DE7943658CC352B77 /* Brand.swift in Sources */,
+				D2125FA32FC7B19A7916EEFB /* BundledTexts.swift in Sources */,
 				C3C7E753AC315B4A8B55B759 /* FontCatalog.swift in Sources */,
 				CF604362656A18E35FEA0EF2 /* HTMLText.swift in Sources */,
 				26CCA725A5FD3B8003C7FD9D /* HebrewText.swift in Sources */,

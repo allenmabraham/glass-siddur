@@ -1,44 +1,10 @@
 import SwiftUI
 import Observation
 
-@MainActor
-@Observable
-final class DownloadManager {
-    var progress: Double = 0
-    var isRunning = false
-    var cacheBytes = 0
-
-    func refreshSize() {
-        Task { cacheBytes = await TextRepository.shared.diskCacheSize() }
-    }
-
-    func download(_ nusach: Nusach) {
-        guard !isRunning else { return }
-        isRunning = true
-        progress = 0
-        let refs = SiddurLibrary.root(for: nusach).leaves.map(\.ref)
-        Task {
-            await TextRepository.shared.prefetch(refs: refs) { value in
-                Task { @MainActor in self.progress = value }
-            }
-            isRunning = false
-            refreshSize()
-        }
-    }
-
-    func clear() {
-        Task {
-            await TextRepository.shared.clearDiskCache()
-            refreshSize()
-        }
-    }
-}
-
 struct SettingsView: View {
     @Environment(ReadingSettings.self) private var settings
     @Environment(LocationService.self) private var location
     @Environment(\.dismiss) private var dismiss
-    @State private var downloads = DownloadManager()
 
     var body: some View {
         @Bindable var settings = settings
@@ -93,24 +59,14 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Button {
-                        downloads.download(settings.nusach)
-                    } label: {
-                        HStack {
-                            Label("Download all of \(settings.nusach.displayName)", systemImage: "arrow.down.circle")
-                            Spacer()
-                            if downloads.isRunning {
-                                ProgressView(value: downloads.progress).frame(width: 80)
-                            }
-                        }
+                    LabeledContent("Prayers included", value: "\(Nusach.allCases.reduce(0) { $0 + BundledTexts.count(for: $1) })")
+                    ForEach(Nusach.allCases) { n in
+                        LabeledContent(n.displayName, value: "\(BundledTexts.count(for: n))")
                     }
-                    .disabled(downloads.isRunning)
-                    LabeledContent("Stored offline", value: ByteCountFormatter.string(fromByteCount: Int64(downloads.cacheBytes), countStyle: .file))
-                    Button("Clear downloaded text", role: .destructive) { downloads.clear() }
                 } header: {
                     Text("Offline")
                 } footer: {
-                    Text("Every prayer you open is kept on this device. Download a whole siddur once and it works without a connection.")
+                    Text("Every prayer of every nusach is built into the app. Nothing needs to be downloaded, and no connection is required.")
                 }
 
                 Section("About") {
@@ -132,7 +88,6 @@ struct SettingsView: View {
                     Button("Done") { dismiss() }.buttonStyle(.glassProminent).tint(.brand)
                 }
             }
-            .onAppear { downloads.refreshSize() }
         }
     }
 }
